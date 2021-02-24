@@ -1,0 +1,9 @@
+body {
+  background: url("clouds.gif");
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
