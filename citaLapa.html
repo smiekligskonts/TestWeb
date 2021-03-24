@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>trolo</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="mansStils.css">
+  <script>
+    function funny() {
+       var kr=document.getElementById("krasa").value;
+       document.getElementById("fons").style="background-color:"+kr;
+    }
+    function krasot(){
+      document.getElementById("krasa").addEventListener("input", funny);
+      var kr=document.getElementById("krasa").value;
+      document.getElementById("fons").innerHTML = "Krāsa nomainīta";
+      document.getElementById("fons").style="background-color:"+kr;
+    }
+  </script>
+</head>
+<body>
+<form>
+  <div id="fons" style="background-color:lightgray;">Izvēlies krāsu!</div>
+  <input type="color" id="krasa" value="#00ff00" onclick="krasot();">
+</form>
+</body>
+</html>

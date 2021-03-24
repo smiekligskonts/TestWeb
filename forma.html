@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>forma</title>
+  <link rel="stylesheet" href="mansStils.css">
+</head>
+<body>
+  <form>
+    <div>1. skaitlis <input type="text" name="sk1"></div>
+    <div><input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button"></div>
+    <div><input value="+" name="plus" onclick="rez.value=sk1.value * 1 + sk2.value * 1" type="button"></div>
+    <div><input value="-" name="minu" onclick="rez.value=sk1.value-sk2.value" type="button"></div>
+    <div><input value="/" name="dali" onclick="rez.value=sk1.value/sk2.value" type="button"></div>
+    <div><input value="Reset" name="dali" onclick="rez.value='';sk1.value='';sk2.value=''" type="button"></div>
+    <div>2. skaitlis &nbsp; <input name="sk2"></div>
+    <hr style="width: 100%; height: 2px;">
+    <div>rezultāts <input name="rez"></div>
+  </form>
+</body>
+</html>
